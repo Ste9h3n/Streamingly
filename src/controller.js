@@ -6,7 +6,7 @@ const client = new discord.Client();
 
 const activeCmds = require("./modules/active_cmds");
 
-dotenv.config({ path: __dirname.replace("src", "") + "data.env" });
+dotenv.config({ path: __dirname.replace("src", "ignored/") + ".env" });
 client.login(process.env.LOGIN_TOKEN);
 
 client.on("ready", () => {
