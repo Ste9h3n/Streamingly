@@ -19,12 +19,15 @@ client.on("message", (msg) => {
     msg = msg.content.toLowerCase();
 
     if (!msg.startsWith(process.env.BOT_PREFIX)) return;
+    if (originalMsg.author.bot) return;
+
+    const args = originalMsg.content.slice(process.env.BOT_PREFIX.length).split(/ +/), command = args.shift();
 
     for (cmd in activeCmds) {
         cmd = activeCmds[cmd];
 
-        if (msg === process.env.BOT_PREFIX+cmd.name.toLowerCase()) {
-            cmd.run(originalMsg);
+        if (command === cmd.name.toLowerCase()) {
+            cmd.run(originalMsg, args);
         }
     }
 })

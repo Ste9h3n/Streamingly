@@ -3,5 +3,7 @@ module.exports.run = (msg) => {
 }
 
 module.exports.name = "Test";
+module.exports.icon = "🤖";
+
 module.exports.description = "A simple command to test the bot.";
 
