@@ -4,20 +4,21 @@
   "description": "",
   "main": "controller.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/controller.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ste9h3n/Streamingly.git"
   },
   "author": "Ste9h3n",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Ste9h3n/Streamingly/issues"
   },
   "homepage": "https://github.com/Ste9h3n/Streamingly#readme",
   "dependencies": {
     "discord.js": "^12.5.1",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
   }
 }
