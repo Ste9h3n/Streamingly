@@ -11,19 +11,22 @@
     "url": "git+https://github.com/Ste9h3n/Streamingly.git"
   },
   "author": "Ste9h3n",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Ste9h3n/Streamingly/issues"
   },
   "homepage": "https://github.com/Ste9h3n/Streamingly#readme",
   "dependencies": {
     "@discordjs/opus": "^0.3.3",
+    "discord-tts": "^1.0.3",
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "ffmpeg": "0.0.4",
     "ffmpeg-static": "^4.2.7",
     "fluent-ffmpeg": "^2.1.2",
-    "ytdl-core": "^4.2.1"
+    "prism-media": "^1.2.3",
+    "ytdl-core": "^4.4.3",
+    "ytsearcher": "^1.2.3"
   }
 }
